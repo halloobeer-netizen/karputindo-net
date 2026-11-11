@@ -10,12 +10,12 @@ export default async function AdminLayout({
   await requireAuth();
 
   return (
-    <div className="flex min-h-screen bg-[#F7F8FA]">
-      <div className="hidden shrink-0 md:block">
+    <div className="flex h-dvh overflow-hidden bg-[#F7F8FA]">
+      <div className="hidden h-full shrink-0 md:block">
         <AdminSidebar />
       </div>
 
-      <div className="flex min-w-0 flex-1 flex-col">
+      <div className="flex min-h-0 min-w-0 flex-1 flex-col overflow-y-auto overscroll-contain">
         <AdminHeader />
         <main className="flex-1 bg-[#F7F8FA] p-4 md:p-5 lg:p-6">
           <div className="mx-auto w-full max-w-[1600px]">
