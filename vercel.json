@@ -7,7 +7,7 @@
     },
     {
       "path": "/api/cron/mikrotik-sync",
-      "schedule": "20 * * * *"
+      "schedule": "20 17 * * *"
     }
   ]
 }
